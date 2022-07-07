@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*
+    Banner
+*/
+
 header{
   background-image: url("../img/friends_banner.jpeg"); 
   background-position: center center;
@@ -35,4 +39,49 @@ header h4 a{
 
 header h4 a:hover{
     color: #9C0BF5;
+}
+
+/*
+    Navbar
+*/
+
+nav{
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+   
+}
+
+nav .option {
+    background-color: #9C0BF5;
+    padding: 1em;
+    margin: 2%;
+    width: 35%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 2ms linear;
+}
+
+nav .option:hover{
+    background-color: #550686;
+}
+
+nav .option a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+    container
+*/
+.container{
+    background-color: #9C0BF5;
+    padding: 1em;
+    color: #ffffff;
+    
 }

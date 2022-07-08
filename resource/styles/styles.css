@@ -54,7 +54,7 @@ nav{
 }
 
 nav .option {
-    background-color: #9C0BF5;
+    background-color: #550686;
     padding: 1em;
     margin: 2%;
     width: 35%;
@@ -65,7 +65,7 @@ nav .option {
 }
 
 nav .option:hover{
-    background-color: #550686;
+    background-color: #9C0BF5;
 }
 
 nav .option a {
@@ -81,7 +81,7 @@ nav .option a {
     Container
 */
 .container{
-    background-color: #9C0BF5;
+    background-color: #550686;
     padding: 1em;
     color: #ffffff;
 }
@@ -122,7 +122,7 @@ nav .option a {
   }
   
 .carroussel-history::-webkit-scrollbar-thumb {
-    background-color: #550686; 
+    background-color: #9C0BF5; 
     border-radius: 10px;  
 }
 
@@ -144,7 +144,7 @@ nav .option a {
   }
   
 #costumers::-webkit-scrollbar-thumb {
-    background-color: #550686; 
+    background-color: #9C0BF5; 
     border-radius: 10px;  
 }
 
@@ -173,7 +173,7 @@ nav .option a {
 }
 
 #costumers .comment{
-    background-color: #550686;
+    background-color: #9C0BF5;
     border-radius: 0 0 10px 10px;
     font-size: 1em;
     padding: 1em;

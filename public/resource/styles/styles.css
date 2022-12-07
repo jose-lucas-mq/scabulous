@@ -5,219 +5,171 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*
-    Banner
-*/
+:root{
+    --main-green: #275516;
+    --second-green: #509F33;
+    --white: #FFFFFF;
+    --black: #000000;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+}
 
-header{
-  background-image: url("../img/friends_banner.jpeg"); 
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+::-webkit-scrollbar {
+    width: 6px; 
+    height: 8px;
+  }
   
-  color: #ffffff; 
-  padding: 1em;
-  text-align: center;
+::-webkit-scrollbar-thumb {
+    background-color: var(--second-green); 
+    border-radius: 50px;
 }
 
-header h1{
-    padding: 2em;
-    font-weight: bold;
-}
 
-header h3{
-    padding: 2em;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: normal;
-}
-
-header h4 a{
-    color: #ffffff;
+a{
     text-decoration: none;
-    transition: all .2s;
 }
 
-header h4 a:hover{
-    color: #9C0BF5;
+.banner{
+    background-image: url(../img/anuncio.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 800px;
+
+    color: var(--white);
+    padding: 2em;
+    text-align: center;
 }
 
-/*
-    Navbar
-*/
+/* nav */
 
 nav{
-    padding: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
-   
-}
+    justify-content: center;
 
-nav .option {
-    background-color: #550686;
-    padding: 1em;
-    margin: 2%;
-    width: 35%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 2ms linear;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
-}
-
-nav .option:hover{
-    background-color: #9C0BF5;
-}
-
-nav .option a {
-    color: #ffffff;
-    text-decoration: none;
     margin: 0 auto;
+}
+
+nav a{
+    color: var(--white);
+    border-radius: 5px;
+    background-color: var(--second-green);
+    padding: 1em;
+    margin: 1.5em;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    box-shadow: var(--box-shadow);
+
+    transition: all 2ms linear;
 }
 
-/*
-    Container
-*/
-.container{
-    background-color: #550686;
-    padding: 1em;
-    color: #ffffff;
+nav a:hover{
+    background-color: var(--main-green);
 }
 
-/*
-    História
-*/
-
-#history{
-    padding: 1em;
+.content{
+    background-color: var(--main-green);
+    width: 100%;
+    height: auto;  
 }
 
-#history .title{
-    font-size: 2em;
+#historia, #disponiveis, #clientes, #galeria, #social-midias{
+    padding: 2em;
+    color: var(--white);
 }
 
-#history p{
-    padding-top: 1em;
-    line-height: 1.5em;
+#historia h2, #historia p, #disponiveis h2, #disponiveis p, #clientes h2, #clientes p, #galeria h2{
+    margin-bottom: 1em;
 }
 
-.carroussel-history{
-    display: flex;
-    padding: 1em;
-    overflow-y: scroll;
-}
-
-.carroussel-history img{
-    width: 250px;
-    height: 250px;
-    margin: 1%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
-}
-
-.carroussel-history::-webkit-scrollbar {
-    width: 0px; 
-  }
-  
-.carroussel-history::-webkit-scrollbar-thumb {
-    background-color: #9C0BF5; 
-    border-radius: 10px;  
-}
-
-
-
-/*
-    Clientes
-*/
-
-#costumers{
-    padding: 1em;
-    padding-left: 0;
+#historia .carroussel, #disponiveis .carroussel, #clientes .carroussel{
     display: flex;
     overflow-y: scroll;
+
+    padding-bottom: 1em;
 }
 
-#costumers::-webkit-scrollbar {
-    width: 0px; 
-  }
-  
-#costumers::-webkit-scrollbar-thumb {
-    background-color: #9C0BF5; 
-    border-radius: 10px;  
+#historia .carroussel-item, #disponiveis .carroussel-item, #clientes .carroussel-item{
+    margin-right: 1.2em;
+    border-radius: 5px;
+    height: 300px;
+
+    box-shadow: var(--box-shadow);
 }
 
-#costumers .card{
-    background-color: #ffffff;
-    border-radius: 10px;
-    text-align: center;
-    margin-right: 1em;
-    margin-top: 2em;
-    height: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
-}
+/* CLIENTES */
 
-#costumers .pic-profile{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin-top: -20%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-#costumers .name{
-    color: #000000;
-    padding: 3em 3em .5em 3em;
-    font-weight: bold;
-}
-
-#costumers .comment{
-    background-color: #9C0BF5;
-    border-radius: 0 0 10px 10px;
+#clientes h3{
+    color: var(--main-green);
     font-size: 1em;
-    padding: 1em;
 }
 
-/*
-    Galeria
-*/
 
-#galery{
+#clientes .carroussel-item{
+    height: auto;
+    border-radius: 15px;
+    min-width: 60%;
+}
+
+#clientes .card-banner {
+    background-color: var(--white);
+    text-align: center;
+    padding: .5em;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#clientes .costumer{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+#clientes .card-phrase{
+    background-color: var(--second-green);
+    color: var(--white);
+    text-align: center;
+    padding: .7em;
+    font-size: .9em;
+
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* GALERIA */
+
+#galeria .photos{
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#galery img, #galery video{
-    margin: .5em;
+#galeria .photos img, #galeria .photos video{
+    margin: .3em;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+    box-shadow: var(--box-shadow)
 }
 
-#galery .row-2{
+#galeria .photos .row-2{
     width: 45%;
 }
 
-#galery .row-4{
-    width: 95%;
+#galeria .photos .row-4{
+    width: 90%;
 }
 
-/*
-    Redes sociais
-*/
+/* REDES SOCIAIS */
 
-
-#social-medias {
-    padding: 1em;
+#social-midias {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-#social-medias .icons{
+#social-midias .icons{
     font-size: 2.5em;
     display: flex;
     flex-direction: column;
@@ -226,6 +178,108 @@ nav .option a {
     padding-right: 1em;
 }
 
-#social-medias .icons .fab {
-    margin-bottom: .5em;
+#social-midias .icons .fab {
+    margin-bottom: 0.5em;
+}
+
+
+/* SMARTPHONES */
+@media only screen and (max-width: 600px) {
+    .btn-whatsapp {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: linear-gradient(27deg, #275516 45%, #509F33 85%);
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 1.5em;
+
+        box-shadow: var(--box-shadow);
+    }
+
+    .btn-whatsapp:hover{
+        background: linear-gradient(27deg, #509F33 45%, #275516 85%);
+    }
+
+    .btn-whatsapp a{
+        color: var(--white);
+        font-size: 2.4em;
+    }
+
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+
+    /* banner */
+    .banner h1 {
+        padding: 1em;
+        margin-top: 20%;
+    }
+
+    .banner .links  {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    .banner .links a{
+        color: var(--white);
+        padding: .2em;
+    }
+
+    .banner .links a:hover{
+        color: var(--second-green);
+    }
+
+    .banner .links a:nth-child(2){
+        border-right: 1px var(--white) solid;
+        margin-right: .2em;
+    }
+
+    /* nav */
+    nav a{
+        width: 30%;
+    }
+    
+}
+
+/* TABLETS */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .btn-whatsapp, .btn-whatsapp a {
+        display: none;
+    }
+
+    
+
+    .container {
+        max-width: 620px;
+        margin: 0 auto;
+        height: 100%;
+    }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .container {
+        max-width: 920px;
+        margin: 0 auto;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 962px){
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        height: 100%;
+    }
 }

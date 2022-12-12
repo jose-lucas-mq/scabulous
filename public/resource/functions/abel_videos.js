@@ -56,5 +56,5 @@ function showDateShow(){
     span_dias.innerHTML = `<br> ${diff_days} dias <br>`
     span_horas.innerHTML = `${diff_hours <= 0 ? "" : diff_hours + " horas <br>" }  `
     span_minutos.innerHTML = `${diff_minutes <= 0 ? "" : diff_minutes + " minutos   <br>"}`
-    span_segundos.innerHTML = `e ${diff_seconds <= 0 ? "" : diff_seconds + " segundos   <br>"}`
+    span_segundos.innerHTML = `${diff_seconds <= 0 ? "" :"e " + diff_seconds + " segundos   <br>"}`
 }

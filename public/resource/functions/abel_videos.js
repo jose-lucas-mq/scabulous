@@ -46,9 +46,12 @@ function showDateShow(){
    
 
     var span_dias = document.getElementById("dias_pro_show");
+    var span_horas = document.getElementById("horas_pro_show");
+    var span_minutos = document.getElementById("minutos_pro_show");
+    var span_segundos = document.getElementById("segundos_pro_show");
 
-    span_dias.innerHTML = `<br>${diff_days} dias <br>
-    ${diff_hours < 0 ? diff_hours * (-1) : diff_hours} hora(s) <br>
-    ${diff_minutes < 0 ? diff_minutes * (-1) : diff_minutes} minuto(s) <br>
-    e ${diff_seconds < 0 ? diff_seconds * (-1) : diff_seconds} segundo(s)<br>`
+    span_dias.innerHTML = `<br> ${diff_days} dias <br>`
+    span_horas.innerHTML = `${diff_hours <= 0 ? "" : diff_hours + " horas <br>" }  `
+    span_minutos.innerHTML = `${diff_minutes <= 0 ? "" : diff_minutes + " minutos   <br>"}`
+    span_segundos.innerHTML = `e ${diff_seconds <= 0 ? "" : diff_seconds + " segundos   <br>"}`
 }

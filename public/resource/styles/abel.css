@@ -40,18 +40,18 @@ body {
 
 h1{
     font-weight: lighter;
-    margin: 1em;
+    margin: .5em;
 }
 
 h1 span, h2 span{
     color: var(--just-red);
-    font-weight: bold;
+    font-weight: 600;
 }
 
 img{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 h2 {
@@ -62,7 +62,7 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 1.1em;
-    margin: 1.5em;
+    margin: 1em;
 }
 
 video{

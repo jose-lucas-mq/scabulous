@@ -50,30 +50,30 @@ h1 span, h2 span{
 
 img{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 h2 {
     font-weight: 500;
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 h3 {
     font-weight: 700;
     font-size: 1.1em;
-    margin: 2em;
+    margin: 1.5em;
 }
 
 video{
     border-radius: 10px;
     width: 90%;
-    height: 300px;
+    height: auto;
 }
 
 h4 {
     font-weight: lighter;
     color: var(--just-red);
-    padding: 1em;
+    padding: 2em;
     margin-top: 10%;
 }

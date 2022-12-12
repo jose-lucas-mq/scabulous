@@ -13,6 +13,10 @@
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
 }
 
+::-webkit-scrollbar-track {
+    background: #275516; 
+  }
+
 ::-webkit-scrollbar {
     width: 6px; 
     height: 8px;
@@ -145,7 +149,7 @@ nav a:hover{
 
 #historia .carroussel, #disponiveis .carroussel, #clientes .carroussel{
     display: flex;
-    overflow-y: scroll;
+    overflow-y: overlay;
 
     padding-bottom: 1em;
 }
@@ -315,7 +319,6 @@ nav a:hover{
 
     #historia .carroussel, #disponiveis .carroussel{
         flex-direction: column;
-        overflow-x: scroll;
         height: 320px;
         margin-top: 5em;
     }
@@ -380,7 +383,6 @@ nav a:hover{
 
     #historia .carroussel, #disponiveis .carroussel{
         flex-direction: column;
-        overflow-x: scroll;
         height: 320px;
         margin-top: 5em;
     }

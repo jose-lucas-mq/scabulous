@@ -353,7 +353,12 @@ nav a:hover{
 
 @media only screen and (min-width: 962px){
     nav a{
-        width: 30%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav{
+        flex-wrap: nowrap;
     }
 
     .banner h1 {

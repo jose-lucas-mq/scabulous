@@ -31,6 +31,9 @@ function playVideo(){
     player.setAttribute('type', "video/mp4");
 
     playerDiv.appendChild(player);
+
+    var span_name_song = document.getElementById("name_music")
+    span_name_song.innerHTML = `${randomVideoPath}.mp4`
 }
 
 function showDateShow(){

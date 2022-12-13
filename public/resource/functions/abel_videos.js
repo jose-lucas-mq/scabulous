@@ -26,7 +26,7 @@ var videos = [
     "The_Zone",
     "Twenty_Eight",
     "Until_I_Bleed_Out",
-    "Wicked_Games",
+    "Wicked_Games"
 ];
 
 window.onload = function () {

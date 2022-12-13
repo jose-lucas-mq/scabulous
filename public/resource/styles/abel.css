@@ -52,16 +52,18 @@ img{
     border-radius: 50%;
     width: 120px;
     height: 120px;
+    box-shadow: var(--box-shadow);
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.3em;
     margin-top: 1.5em;
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 1.1em;
+    font-weight: 500;
+    font-size: 1em;
     margin: 1em;
 }
 
@@ -69,9 +71,16 @@ video{
     border-radius: 10px;
     width: 90%;
     height: auto;
+    box-shadow: var(--box-shadow);
 }
 
-h4 {
+
+#name_music{
+    font-weight: 700;
+    color: var(--just-red);
+}
+
+h4  {
     font-weight: lighter;
     color: var(--just-red);
     padding: 2em;

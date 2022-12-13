@@ -41,6 +41,7 @@ body {
 h1{
     font-weight: lighter;
     margin: .5em;
+    font-size: 1.7em;
 }
 
 h1 span, h2 span{
@@ -48,11 +49,16 @@ h1 span, h2 span{
     font-weight: 600;
 }
 
-img{
+.abel{
     border-radius: 50%;
     width: 120px;
     height: 120px;
+
     box-shadow: var(--box-shadow);
+
+    background-image: url('./../img/abel/abell.gif');
+    background-size: cover;
+    margin: 0 auto;
 }
 
 h2 {

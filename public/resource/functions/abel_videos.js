@@ -44,7 +44,8 @@ var memes = [
     "sigma",
     "telas_vity",
     "the_monday",
-    "zerobala"
+    "zerobala",
+    "pf_nao_fica_longe"
 ]
 
 window.onload = function () {

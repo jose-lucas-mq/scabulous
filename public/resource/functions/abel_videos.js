@@ -30,6 +30,7 @@ var videos = [
 ];
 
 var memes = [
+    "abel_rebaixado",
     "boy",
     "broderagem",
     "calvo",

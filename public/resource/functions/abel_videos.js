@@ -29,17 +29,41 @@ var videos = [
     "Wicked_Games"
 ];
 
+var memes = [
+    "boy",
+    "broderagem",
+    "calvo",
+    "cegueta",
+    "fortnite",
+    "gemidao",
+    "gritinho",
+    "jordan",
+    "muito_eu",
+    "que_fome",
+    "sigma",
+    "telas_vity",
+    "the_monday",
+    "zerobala"
+]
+
 window.onload = function () {
     playVideo();
+    changePhoto();
     showDateShow();
     setInterval(showDateShow, 1000);
 };
+
+function changePhoto(){
+    var img_abel = document.getElementById("abel_meme");
+    var randomImgPath = memes[Math.floor(Math.random() * memes.length)];
+    img_abel.setAttribute('src', `https://resources-telasvity.s3.amazonaws.com/images/${randomImgPath}.jpeg`)
+}
 
 function playVideo(){
     var playerDiv = document.getElementById("player_video");
     var player = document.createElement("source");
     var randomVideoPath = videos[Math.floor(Math.random() * videos.length)];
-    player.setAttribute('src', `./resource/img/abel/${randomVideoPath}.mp4`);
+    player.setAttribute('src', `https://resources-telasvity.s3.amazonaws.com/videos/${randomVideoPath}.mp4`);
     player.setAttribute('type', "video/mp4");
 
     playerDiv.appendChild(player);

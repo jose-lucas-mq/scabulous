@@ -82,21 +82,37 @@ a{
     font-size: 2em;
 }
 
-.banner p, .banner .links{
-    font-size: 1.5em;
-    padding: 1em;
-}
-
-.banner .links a{
+.links, .links a{
+    font-size: 1.2em;
+    text-align: center;
     color: var(--white);
-    padding: .2em;
+    padding: .1em;
 }
 
-.banner .links a:hover{
+.links {
+    padding: 1.3em;
+}
+
+.credits{
+    font-size: .8em;
+    color: var(--white);
+    padding: 1em;    
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.credits a {
+    color: var(--white);
+    margin-left: .2em;
+}
+
+
+.links a:hover{
     color: var(--second-green);
 }
 
-.banner .links a:nth-child(2){
+.links a:nth-child(2){
     border-right: 1px var(--white) solid;
     margin-right: .2em;
 }

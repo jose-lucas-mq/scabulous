@@ -6,15 +6,15 @@
 }
 
 :root{
-    --main-green: #275516;
-    --second-green: #509F33;
+    --main-green: #be264b;
+    --second-green: #b70935;
     --white: #FFFFFF;
     --black: #000000;
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
 }
 
 ::-webkit-scrollbar-track {
-    background: #275516; 
+    background: var(--main-green); 
   }
 
 ::-webkit-scrollbar {
@@ -31,6 +31,10 @@
 a{
     text-decoration: none;
 }
+/*
+    --main-green: #275516;
+    --second-green: #509F33;
+*/
 
 .banner{
     background-image: url(../img/anuncio.gif);
@@ -51,7 +55,7 @@ a{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: linear-gradient(27deg, #275516 45%, #509F33 85%);
+    background: linear-gradient(27deg, var(--main-green) 45%, var(--second-green) 85%);
 
 
     display: flex;
@@ -67,7 +71,7 @@ a{
 }
 
 .btn-whatsapp:hover{
-    background: linear-gradient(27deg, #509F33 45%, #275516 85%);
+    background: linear-gradient(27deg, var(--second-green) 45%, var(--main-green) 85%);
 }
 
 .btn-whatsapp a{

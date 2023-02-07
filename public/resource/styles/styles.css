@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: #b70935;
+}
+
 :root{
     --main-green: #be264b;
     --second-green: #b70935;

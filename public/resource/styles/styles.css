@@ -7,8 +7,8 @@
 
 
 :root{
-    --main-green: #A3271F;
-    --second-green: #660606;
+    --main-green: #3e3333;
+    --second-green: #d3caca;
     --white: #FFFFFF;
     --black: #000000;
     --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
@@ -142,7 +142,7 @@ nav{
 }
 
 nav a{
-    color: var(--white);
+    color: var(--black);
     border-radius: 5px;
     background-color: var(--second-green);
     padding: 1em;
@@ -159,6 +159,7 @@ nav a{
 
 nav a:hover{
     background-color: var(--main-green);
+    color: var(--white);
 }
 
 .content{
@@ -191,6 +192,33 @@ nav a:hover{
     box-shadow: var(--box-shadow);
 }
 
+#disponiveis .carroussel-disponiveis{
+    background-color: var(--white);
+    color: var(--main-green);
+    border-radius: 10px;
+
+    margin: 2%;
+}
+
+#disponiveis .carroussel-scroll{
+    display: flex;
+    overflow-y: overlay;
+
+    padding-bottom: 1em;
+}
+
+#disponiveis .carroussel-disponiveis .texts-paint{
+    padding: 1em;
+}
+
+#disponiveis .carroussel-disponiveis .banner-paint{
+    width: 300px;
+    height: 250px;
+
+    background-size: cover;
+}
+
+
 /* CLIENTES */
 
 #clientes h3{
@@ -220,7 +248,7 @@ nav a:hover{
 
 #clientes .card-phrase{
     background-color: var(--second-green);
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     padding: .7em;
     font-size: .9em;
@@ -351,6 +379,8 @@ nav a:hover{
         height: 320px;
         margin-top: 5em;
     }
+
+
 
     #disponiveis .carroussel{
         height: 220px;

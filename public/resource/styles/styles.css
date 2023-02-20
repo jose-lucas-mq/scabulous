@@ -88,7 +88,7 @@ a{
     padding: 1em;
     margin-top: 20%;
     font-size: 2em;
-    color: var(--second-green);
+    color: var(--white);
 }
 
 .gothic-font{
@@ -181,8 +181,10 @@ nav a:hover{
     display: flex;
     overflow-y: overlay;
 
+    
     padding-bottom: 1em;
 }
+
 
 #historia .carroussel-item, #disponiveis .carroussel-item, #clientes .carroussel-item{
     margin-right: 1.2em;
@@ -197,13 +199,13 @@ nav a:hover{
     color: var(--main-green);
     border-radius: 10px;
 
-    margin: 2%;
+    margin-right: 2%;
 }
 
 #disponiveis .carroussel-scroll{
     display: flex;
     overflow-y: overlay;
-
+    width: 100%;
     padding-bottom: 1em;
 }
 
@@ -272,10 +274,13 @@ nav a:hover{
 
 #galeria .photos .row-2{
     width: 45%;
+    background-size: cover;
 }
 
 #galeria .photos .row-4{
     width: 90%;
+
+    background-size: cover;
 }
 
 /* REDES SOCIAIS */
@@ -327,10 +332,12 @@ nav a:hover{
     nav a{
        width: 30%;
     }
-    
-    #clientes .carroussel-item {
-        min-width: 40%;
+
+    #historia .carroussel {
+        display: flex;
     }
+    
+    
 
     .container {
         max-width: 620px;
@@ -352,7 +359,7 @@ nav a:hover{
     #disponiveis .carroussel-scroll{
         display: flex;
         overflow-y: overlay;
-    
+        
         padding-bottom: 1em;
     }
     
@@ -374,6 +381,10 @@ nav a:hover{
         width: 30%;
     }
 
+    #historia .carroussel {
+        display: none;
+    }
+
     .banner h1 {
         font-size: 2.5em;
     }
@@ -382,14 +393,15 @@ nav a:hover{
         font-size: 2em;
     }
 
-    #historia, #disponiveis {
+    #historia {
         display: flex;
     }
 
-    #historia .text, #disponiveis .text{
-        width: 70%;
-        padding: 1em;
+    #historia .text{
+        width: 100%;
     }
+
+   
 
     #historia .carroussel, #disponiveis .carroussel{
         flex-direction: column;
@@ -400,7 +412,7 @@ nav a:hover{
 
 
     #disponiveis .carroussel{
-        height: 220px;
+        display: none;
     }
 
     #historia .carroussel-item, #disponiveis .carroussel-item{
@@ -448,14 +460,14 @@ nav a:hover{
         font-size: 2em;
     }
 
-    #historia, #disponiveis {
+    #historia .carroussel {
+        display: none;
+    }
+
+    #historia {
         display: flex;
     }
 
-    #historia .text, #disponiveis .text{
-        width: 70%;
-        padding: 1em;
-    }
 
     #historia .carroussel, #disponiveis .carroussel{
         flex-direction: column;

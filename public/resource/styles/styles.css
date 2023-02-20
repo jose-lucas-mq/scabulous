@@ -88,8 +88,11 @@ a{
     padding: 1em;
     margin-top: 20%;
     font-size: 2em;
-    font-family: 'Gloock', cursive;
     color: var(--second-green);
+}
+
+.gothic-font{
+    font-family: 'Gloock', cursive;
 }
 
 .links, .links a{

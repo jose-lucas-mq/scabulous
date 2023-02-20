@@ -237,7 +237,8 @@ nav a:hover{
     background-color: var(--white);
     text-align: center;
     padding: .5em;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+
 }
 
 #clientes .costumer{
@@ -252,8 +253,6 @@ nav a:hover{
     text-align: center;
     padding: .7em;
     font-size: .9em;
-
-    border-radius: 0px 0px 15px 15px;
 }
 
 /* GALERIA */
@@ -348,6 +347,24 @@ nav a:hover{
 
     #social-midias p{
         font-size: 1.5em;
+    }
+
+    #disponiveis .carroussel-scroll{
+        display: flex;
+        overflow-y: overlay;
+    
+        padding-bottom: 1em;
+    }
+    
+    #disponiveis .carroussel-disponiveis .texts-paint{
+        padding: 1em;
+    }
+    
+    #disponiveis .carroussel-disponiveis .banner-paint{
+        width: 300px;
+        height: 250px;
+    
+        background-size: cover;
     }
 }
 

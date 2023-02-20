@@ -186,7 +186,7 @@ nav a:hover{
 }
 
 
-#historia .carroussel-item, #disponiveis .carroussel-item, #clientes .carroussel-item{
+#historia .carroussel-item, #disponiveis .carroussel, #clientes .carroussel-item{
     margin-right: 1.2em;
     border-radius: 5px;
     height: 300px;

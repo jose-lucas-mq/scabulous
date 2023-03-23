@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    color: var(--white);
+}
+
+:root{
+    --main-green: #56D785;
+    --second-green: #023415;
+    --white: #FFFFFF;
+    --black: #000000;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+}
+
+::-webkit-scrollbar-track {
+    background: #56D785; 
+  }
+
+::-webkit-scrollbar {
+    width: 6px; 
+    height: 8px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .6); 
+    border-radius: 50px;
+}
+
+body {
+    min-height: 1000px;
+    padding: .5em;
+    background: radial-gradient(50% 50% at 50% 50%, 
+        var(--main-green) 0%, 
+        var(--second-green) 100%);
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    font-weight: lighter;
+    margin: .5em;
+    font-size: 1.7em;
+    margin: 5%;
+}
+
+h1 span{
+    color: #56D785;
+}
+
+h2{
+    margin: 5%;
+}
+
+h2 span{
+    font-weight: lighter;
+}

@@ -503,5 +503,10 @@ nav a:hover{
     #social-midias p{
         font-size: 1.5em;
     }
+}
 
+
+img{
+	max-width:100%;
+	height:auto;
 }

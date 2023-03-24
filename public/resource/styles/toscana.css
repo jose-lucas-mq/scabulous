@@ -31,13 +31,50 @@
 
 body {
     min-height: 1000px;
-    padding: .5em;
     background: radial-gradient(50% 50% at 50% 50%, 
         var(--main-green) 0%, 
         var(--second-green) 100%);
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
+svg {
+	width: 100%;
+	height: 1000px;
+	max-width: 100%;
+	max-height: 100%;
+    z-index: -1;
+}
+
+circle {
+	opacity: 0;
+	animation: dash var(--duration) var(--delay) linear var(--direction) infinite
+		forwards;
+}
+
+@keyframes dash {
+	10% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 0;
+		stroke-dashoffset: 0;
+	}
+}
+
+.container{
+    margin-top: -150%;
+}
 
 h1{
     font-weight: lighter;
@@ -57,3 +94,4 @@ h2{
 h2 span{
     font-weight: lighter;
 }
+

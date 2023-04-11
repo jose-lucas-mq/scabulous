@@ -73,7 +73,7 @@ circle {
 }
 
 .container{
-    margin-top: -150%;
+    margin-top: -85vh;
 }
 
 h1{
@@ -95,3 +95,7 @@ h2 span{
     font-weight: lighter;
 }
 
+.soundbar img{
+    width: 50%;
+    margin: 0 auto;
+}

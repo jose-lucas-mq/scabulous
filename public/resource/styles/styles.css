@@ -305,6 +305,10 @@ nav a:hover{
 }
 
 
+.img_footer{
+    margin: 0 auto;
+}
+
 /* SMARTPHONES */
 @media only screen and (max-width: 600px) {
     

@@ -198,7 +198,7 @@ nav a:hover{
     background-color: var(--white);
     color: var(--main-color);
     border-radius: 10px;
-
+    min-width: 40%;
     margin-right: 2%;
 }
 
@@ -262,10 +262,10 @@ nav a:hover{
 /* GALERIA */
 
 #galeria .photos{
-    padding: 1em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-width: 100%;
 }
 
 #galeria .photos img, #galeria .photos video{
@@ -321,7 +321,9 @@ nav a:hover{
         height: 100%;
     }
 
-
+    #disponiveis .carroussel-disponiveis{
+        min-width: 60%;
+    }
    
 
     /* nav */
@@ -368,6 +370,10 @@ nav a:hover{
         
         padding-bottom: 1em;
     }
+
+    #disponiveis .carroussel-disponiveis{
+        min-width: 50%;
+    }
     
     #disponiveis .carroussel-disponiveis .texts-paint{
         padding: 1em;
@@ -413,6 +419,10 @@ nav a:hover{
         flex-direction: column;
         height: 320px;
         margin-top: 5em;
+    }
+
+    #disponiveis .carroussel-disponiveis {
+        min-width: 60%;
     }
 
 

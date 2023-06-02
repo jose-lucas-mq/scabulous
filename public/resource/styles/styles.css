@@ -220,6 +220,26 @@ nav a:hover{
     background-size: cover;
 }
 
+#disponiveis .carroussel-disponiveis .cta_disp{
+    background-color: var(--main-color);
+    color: var(--white);
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    padding: 0.4em;
+    text-align: center;
+    display: block;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+#disponiveis .carroussel-disponiveis .cta_disp:hover{
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
 
 /* CLIENTES */
 
@@ -323,8 +343,7 @@ nav a:hover{
 
     #disponiveis .carroussel-disponiveis{
         min-width: 60%;
-    }
-   
+    }   
 
     /* nav */
     nav a{

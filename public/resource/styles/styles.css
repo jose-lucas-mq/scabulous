@@ -232,7 +232,7 @@ nav a:hover{
 #clientes .carroussel-item{
     height: auto;
     border-radius: 15px;
-    min-width: 60%;
+    min-width: 90%;
     background-color: var(--second-color);
     padding-bottom: 1em;
 }
@@ -425,10 +425,6 @@ nav a:hover{
         margin-bottom: 1em;
     }
 
-    #clientes .carroussel-item {
-        min-width: 35%;
-    }
-
     #galeria .photos .row-2 {
         width: 35%;
     }
@@ -487,10 +483,6 @@ nav a:hover{
 
     #historia .carroussel-item, #disponiveis .carroussel-item{
         margin-bottom: 1em;
-    }
-
-    #clientes .carroussel-item {
-        min-width: 35%;
     }
 
     #galeria .photos .row-2 {

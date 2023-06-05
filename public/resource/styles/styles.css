@@ -93,6 +93,7 @@ a{
 
 .gothic-font{
     font-family: 'Gloock', cursive;
+    letter-spacing: .1em;
 }
 
 .links, .links a{

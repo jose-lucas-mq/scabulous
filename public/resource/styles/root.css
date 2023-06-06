@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --main-color: #9313E2;
+    --second-color: #54167a;
+    --white: #FFFFFF;
+    --black: #000000;
+    --box-shadow: 0px 4px 8px rgba(0, 0, 0, .6);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--second-color); 
+  }
+
+::-webkit-scrollbar {
+    width: 6px; 
+    height: 8px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .6); 
+    border-radius: 50px;
+}
+
+body{
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, 
+        var(--main-color) 0%, 
+        var(--second-color) 100%);
+        padding: 2em;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card{
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    height: 250px;
+    margin-bottom: 1em;
+}
+
+.card .banner{
+    width: 40%;
+    border-radius: 9px 0px 0px 9px;
+}
+
+.card .info{
+    padding: 1em;
+}
+
+.card .info .title{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.card .info .descricao{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.card .info a{
+    background-color: #54167a;
+    color: var(--white);
+    margin-top: .5em;
+    padding: .5em;
+    width: 40%;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.card .info a:hover{
+    background-color: #9313E2;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 50%;
+    }
+}

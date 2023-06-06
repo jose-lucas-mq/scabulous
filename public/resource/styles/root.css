@@ -32,7 +32,7 @@ body{
     background: radial-gradient(50% 50% at 50% 50%, 
         var(--main-color) 0%, 
         var(--second-color) 100%);
-        padding: 2em;
+    padding: 2em;
 }
 
 .container{
@@ -43,25 +43,28 @@ body{
 .card{
     background-color: var(--white);
     width: 100%;
-    border-radius: 10px;
-    display: flex;
-    height: 250px;
-    margin-bottom: 1em;
+    border-radius: 10px; 
+    height: 350px;
+    margin-bottom: 1em;   
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .card .banner{
-    width: 40%;
-    border-radius: 9px 0px 0px 9px;
+    width: 100%;
+    border-radius: 9px 9px 0px 0px;
+    height: 125px;
 }
 
 .card .info{
     padding: 1em;
+    text-align: center;
 }
 
 .card .info .title{
     font-size: 1.7em;
     text-transform: uppercase;
-    margin-top: 1.5em;
     margin-bottom: 2em;
 }
 
@@ -73,7 +76,7 @@ body{
 .card .info a{
     background-color: #54167a;
     color: var(--white);
-    margin-top: .5em;
+    margin: 0 auto;
     padding: .5em;
     width: 40%;
     display: block;

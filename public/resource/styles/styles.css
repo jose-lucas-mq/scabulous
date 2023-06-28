@@ -169,7 +169,7 @@ nav a:hover{
     height: auto;  
 }
 
-#historia, #disponiveis, #clientes, #galeria, #social-midias{
+#historia, #disponiveis, #clientes, #galeria, #social-midias, #disclaimer{
     padding: 2em;
     color: var(--white);
 }
@@ -305,6 +305,23 @@ nav a:hover{
     width: 90%;
 
     background-size: cover;
+}
+
+/* DISCLAIMER */
+
+#disclaimer{
+    background-color: var(--second-color);
+    width: 60%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#disclaimer i{
+    font-size: 1.3em;
 }
 
 /* REDES SOCIAIS */

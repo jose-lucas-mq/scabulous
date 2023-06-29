@@ -331,6 +331,7 @@ nav a:hover{
     border-radius: 10px;
     width: 100%;
     padding: 1em;
+    box-shadow: var(--box-shadow);
 }
 
 /* REDES SOCIAIS */

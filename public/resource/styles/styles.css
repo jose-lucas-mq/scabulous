@@ -310,19 +310,27 @@ nav a:hover{
 /* DISCLAIMER */
 
 #disclaimer{
-    background-color: var(--second-color);
+    
     width: 60%;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    border-radius: 10px;
     color: var(--main-color);
 }
 
 #disclaimer i{
     font-size: 1.3em;
+}
+
+#disclaimer div{
+    margin-bottom: 1.5em;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    width: 100%;
+    padding: 1em;
 }
 
 /* REDES SOCIAIS */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatinhosssssss</title>
+    <link rel="shortcut icon" href="https://resources-telasvity.s3.amazonaws.com/cats/727.jpg" type="image/x-icon">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-family: 'Maven Pro', sans-serif;
+        text-align: center;
+        color: var(--white);
+    }
+
+    body{
+        background-color: rgba(237, 190, 110, 0.6); 
+        padding: 2em;
+    }
+
+    button{
+        margin: 1em;
+        padding: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 10px;
+        background-color: #724410;
+        color: #FFFFFF;
+    }
+</style>
+
+<body>
+    <img src="" alt="" id="cats_content" height="250" height="250">
+
+    <br>
+
+    <button onclick="changeCat()">
+        Mostrar um gatinho
+    </button>
+</body>
+</html>
+
+<script>
+    function changeCat(){
+        var cats_meme = document.getElementById("cats_content");
+        var randomImg = Math.floor(Math.random() * 832);
+        cats_meme.setAttribute('src', `https://resources-telasvity.s3.amazonaws.com/cats/${randomImg}.jpg`)
+    }
+</script>

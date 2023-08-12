@@ -28,6 +28,8 @@
     border-radius: 50px;
 }
 
+@font-face {font-family: Barrio_Santo; src: url('../fonts/Barrio_Santo.ttf')} 
+
 body{
     background-color: var(--main-color);
 }
@@ -41,7 +43,7 @@ a{
 */
 
 .banner{
-    background-image: url(../img/gifs/jaqueta_racionais.gif);
+    background-image: url(../img/gifs/pikachu.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,8 +94,9 @@ a{
 }
 
 .gothic-font{
-    font-family: 'Gloock', cursive;
+    font-family: Barrio_Santo;
     letter-spacing: .1em;
+    font-size: 2em;
 }
 
 .links, .links a{
@@ -193,6 +196,15 @@ nav a:hover{
     height: 300px;
 
     box-shadow: var(--box-shadow);
+}
+
+#historia span{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#historia span .cinzel-font{
+    font-family: 'Cinzel Decorative', cursive;
 }
 
 #disponiveis .carroussel-disponiveis{

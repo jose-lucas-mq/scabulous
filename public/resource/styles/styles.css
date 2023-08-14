@@ -61,7 +61,8 @@ a{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: linear-gradient(27deg, #509F33 45%, #275516 85%);
+    /* background: linear-gradient(27deg, #509F33 45%, #275516 85%); */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 
 
     display: flex;
@@ -76,9 +77,10 @@ a{
     box-shadow: var(--box-shadow);
 }
 
-.btn-whatsapp:hover{
+/* .btn-whatsapp:hover{
     background: linear-gradient(27deg, #275516 45%, #509F33 85%);
-}
+   
+} */
 
 .btn-whatsapp a{
     color: var(--white);

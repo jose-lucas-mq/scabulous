@@ -101,15 +101,29 @@ a{
     font-size: 2em;
 }
 
-.links, .links a{
+.links a{
     font-size: 1.2em;
-    text-align: center;
     color: var(--white);
-    padding: .1em;
+    padding: 0.1em;
+    height: 50px;
+    width: 50px;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em;
 }
 
 .links {
     padding: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .credits{
@@ -127,8 +141,20 @@ a{
 }
 
 
-.links a:hover{
-    color: var(--second-color);
+#instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#pinterest:hover{
+    background: #e60024;
+}
+
+#twitter:hover{
+    background: #369cf0;
+}
+
+#tiktok:hover{
+    background: #000000;
 }
 
 

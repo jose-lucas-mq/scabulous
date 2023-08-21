@@ -114,6 +114,8 @@ a{
     align-items: center;
     justify-content: center;
     margin: 0.5em;
+    box-shadow: var(--box-shadow);
+    color: var(--main-color);
 }
 
 .links {
@@ -140,6 +142,9 @@ a{
     margin-left: .2em;
 }
 
+.links a:hover{
+    color: #ffffff;
+}
 
 #instagram:hover{
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);

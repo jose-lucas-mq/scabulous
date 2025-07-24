@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/style/modal.css">
+    <title> Meu amor ♥️ </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Primeiro dia de namoro
+        </h1>
+        <h3>
+            29 de abril de 2023
+        </h3>
+
+        <p>
+            O que dizer dessa semana? Ainda hoje me lembro dela com bastante carinho, a gente havia tido um baita dia no
+            Museu da Indepedência e depois fomos janta, e foi tão romantico, eu me lembro de você com aquele vestido
+            vermelho passando frio e linda como sempre. Depois de um tempo minha curiosidade e agonia em saber da gente
+            só aumentava e nesse que falou pra mim que eu não tava errado em criar expectatitva foi o dia em que eu tive
+            certeza que queria viver com você e daí ja comecei a te namorar sem você saber.
+        </p>
+
+        <div class="swiper mainSlide">
+            <div class="swiper-wrapper" id="slide">
+            </div>
+            <div class="swiper-scrollbar">
+            </div>
+        </div>
+
+        <h3>
+            <a href="./../index.html">Voltar</a>
+        </h3>
+</body>
+
+</html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+    });
+
+    const slide = document.getElementById('slide');
+    const imgs = [
+        "IMG_20230429_180613.jpg",
+        "IMG_20230429_221945.jpg",
+        "IMG_20230429_224303.jpg",
+        "IMG-20230430-WA0005.jpg",
+        "IMG-20230430-WA0006.jpg",
+        "IMG-20230430-WA0007.jpg",
+        "Screenshot_2023-04-29-16-36-40-415_com.google.android.apps.maps.jpg",
+    ]
+
+    for (let i = 0; i < imgs.length; i++) {
+        slide.innerHTML += `
+            <div class="swiper-slide">
+                <img src="./../assets/img/primeiro_dia_de_namoro/${imgs[i]}" alt=" ${i + 1}">
+            </div>
+        `;
+    }
+
+</script>

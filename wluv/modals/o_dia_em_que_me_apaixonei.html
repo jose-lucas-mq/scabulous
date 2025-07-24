@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/style/modal.css">
+    <title> Meu amor ♥️ </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            O dia em que me apaixonei
+        </h1>
+        <h3>
+            29 de junho de 2022
+        </h3>
+
+        <p>
+            Eu lembro como se fosse hoje, eu tava recioso, porque era a minha primeira folga no trabalho, e eu tinha um
+            monte de coisa pra fazer antes de sair, eu fui no dentista em São Caetano, depois vim correndo pra casa me
+            arrumar, nem vi a hora passando, só lembro de ver o ônibus passando e eu correndo pra ir pegar ele (nessa
+            epóca não andava tanto de uber). Eu gostei demais desse dia, você tava tão fofa e linda vendo a exposição,
+            mas ela ficou em segundo plano, porque nesse dia eu senti algo por você e não pude negar que eu me apaixonei
+            nesse dia.
+        </p>
+
+        <div class="swiper mainSlide">
+            <div class="swiper-wrapper" id="slide">
+            </div>
+            <div class="swiper-scrollbar">
+            </div>
+        </div>
+
+        <h3>
+            <a href="./../index.html">Voltar</a>
+        </h3>
+</body>
+
+</html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+    });
+
+    const slide = document.getElementById('slide');
+    const imgs = [
+        "20220629_152937.jpg",
+        "20220629_154145.jpg",
+        "20220629_162403.jpg",
+        "20220629_170042.jpg",
+        "20220629_170413.jpg",
+        "20220629_170433.jpg",
+        "20220629_170703.jpg",
+        "20220629_171141.jpg",
+        "20220629_171316.jpg",
+        "20220629_171342.jpg",
+        "20220629_171541.jpg",
+        "20220629_172314.jpg",
+        "20220629_172319.jpg",
+        "20220629_184259.jpg",
+        "20220629_185956.jpg",
+        "IMG-20221214-WA0022.jpg"
+    ]
+
+    for (let i = 0; i < imgs.length; i++) {
+        slide.innerHTML += `
+            <div class="swiper-slide">
+                <img src="./../assets/img/o_dia_em_que_me_apaixonei/${imgs[i]}" alt=" ${i + 1}">
+            </div>
+        `;
+    }
+
+</script>

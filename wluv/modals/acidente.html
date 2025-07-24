@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/style/modal.css">
+    <title> Meu amor ♥️ </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Acidente
+        </h1>
+        <h3>
+            25 de março de 2025
+        </h3>
+
+        <p>
+            Felizmente, ou inflelizmente, eu não lembro quase nada desse dia, só lembro um pouco da sensação absurda de
+            medo quando te vi deitada na cama do UPA, e o desespero que eu senti quando soube o quão machucado você estava.
+            Eu só queria que você estivesse bem, e que nada tivesse acontecido com você. Mas a gente não controla tudo e esse tipo de coisa
+            acontece pra outras acontecerem, e hoje eu com certeza sei que posso confiar cegament em você, e que eu não quero viver nada disso 
+            de novo.
+        </p>
+
+        <div class="swiper mainSlide">
+            <div class="swiper-wrapper" id="slide">
+            </div>
+            <div class="swiper-scrollbar">
+            </div>
+        </div>
+
+        <h3>
+            <a href="./../index.html">Voltar</a>
+        </h3>
+</body>
+
+</html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+        },
+    });
+
+    const slide = document.getElementById('slide');
+    const imgs = [
+        "IMG_20250313_073540.jpg",
+        "IMG-20250220-WA0000.jpg",
+        "IMG-20250223-WA0003.jpg",
+        "IMG-20250224-WA0008.jpg",
+        "IMG-20250224-WA0009.jpg",
+        "IMG-20250226-WA0000.jpg",
+        "IMG-20250226-WA0027.jpg",
+        "IMG-20250227-WA0001.jpg",
+        "IMG-20250228-WA0002.jpg",
+        "IMG-20250228-WA0020.jpg",
+        "IMG-20250301-WA0015.jpg",
+        "IMG-20250301-WA0040.jpg",
+        "IMG-20250302-WA0006.jpg",
+        "IMG-20250303-WA0013.jpg",
+        "IMG-20250304-WA0002.jpg",
+        "IMG-20250304-WA0004.jpg",
+        "IMG-20250304-WA0015.jpg",
+        "IMG-20250304-WA0021.jpg",
+        "IMG-20250305-WA0014.jpg",
+        "IMG-20250306-WA0007.jpg",
+        "IMG-20250306-WA0026.jpg",
+        "IMG-20250313-WA0014.jpg",
+        "IMG-20250323-WA0003.jpg",
+        "IMG-20250323-WA0006.jpg",
+        "IMG-20250325-WA0055.jpg",
+        "IMG-20250327-WA0018.jpg",
+        "Screenshot_2025-03-21-22-41-21-157_com.whatsapp.jpg",
+        "Screenshot_2025-03-21-22-41-22-658_com.whatsapp.jpg",
+        "Screenshot_2025-03-21-23-52-12-173_com.whatsapp.jpg",
+        "Screenshot_2025-03-21-23-52-14-627_com.whatsapp.jpg",
+        "Screenshot_2025-03-22-00-27-14-998_com.whatsapp.jpg",
+    ]
+
+    for (let i = 0; i < imgs.length; i++) {
+        slide.innerHTML += `
+            <div class="swiper-slide">
+                <img src="./../assets/img/acidente/${imgs[i]}" alt=" ${i + 1}">
+            </div>
+        `;
+    }
+
+</script>
